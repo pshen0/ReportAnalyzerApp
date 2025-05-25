@@ -1,0 +1,64 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+
+  minio:
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: minio123
+    volumes:
+      - minio_data:/data
+
+  gateway:
+    build: ./ApiGateway
+    depends_on:
+      - storage
+      - analysis
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_URLS: "http://0.0.0.0:8080"
+
+  storage:
+    build: ./FileStoringService
+    ports:
+      - "5001:5000"
+    depends_on:
+      - db
+      - minio
+    environment:
+      ConnectionStrings__PostgreSQL: Host=db;Port=5432;Database=files;Username=postgres;Password=postgres
+      Minio__Endpoint: minio:9000
+      Minio__AccessKey: minio
+      Minio__SecretKey: minio123
+      Minio__Bucket: reports
+      ASPNETCORE_URLS: "http://0.0.0.0:5000"
+
+  analysis:
+    build: ./FileAnalysisService
+    ports:
+      - "6000:6000"
+    depends_on:
+      - db
+      - minio
+    environment:
+      ConnectionStrings__PostgreSQL: Host=db;Port=5432;Database=analysis;Username=postgres;Password=postgres
+      WordCloud__Url: https://wordcloud.example/api/generate
+      Minio__Endpoint: minio:9000
+      Minio__AccessKey: minio
+      Minio__SecretKey: minio123
+      Minio__Bucket: reports
+      ASPNETCORE_URLS: "http://0.0.0.0:6000"
+
+volumes:
+  db_data:
+  minio_data:

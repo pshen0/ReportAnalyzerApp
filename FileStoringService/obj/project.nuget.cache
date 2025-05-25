@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "unHRNXjRmsA=",
+  "success": true,
+  "projectFilePath": "/Users/anya_psheno/HSE/kpo/ReportAnalyzerApp/FileStoringService/FileStoringService.csproj",
+  "expectedPackageFiles": [
+    "/Users/anya_psheno/.nuget/packages/aspnetcore.healthchecks.uris/2.2.0/aspnetcore.healthchecks.uris.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.aspnetcore.openapi/8.0.13/microsoft.aspnetcore.openapi.8.0.13.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.configuration.abstractions/2.2.0/microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.2.0/microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.diagnostics.healthchecks/2.2.0/microsoft.extensions.diagnostics.healthchecks.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.diagnostics.healthchecks.abstractions/2.2.0/microsoft.extensions.diagnostics.healthchecks.abstractions.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.fileproviders.abstractions/2.2.0/microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.hosting.abstractions/2.2.0/microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.logging.abstractions/2.2.0/microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.options/2.2.0/microsoft.extensions.options.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.extensions.primitives/2.2.0/microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/system.componentmodel.annotations/4.5.0/system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/system.memory/4.5.1/system.memory.4.5.1.nupkg.sha512",
+    "/Users/anya_psheno/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.1/system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
